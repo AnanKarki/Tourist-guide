@@ -24,7 +24,7 @@ Search for hotel</p>
                   <img src="/images/icon.PNG" Search.PNGalt="image" width="600" height="500"> </br>
 <p>
 1 .click the bed icon it will redirect to google search engine</p>   
-                  <img src="/images/googlesearch.PNG" Search.PNGalt="image" width="600" height="500"></br> 
+                  <img src="/images/googlesearch.PNG" Search.PNGalt="image" width="600" height="300"></br> 
 <p>
 Search for distance and travel time for your location to search location 
 1.click on car icon you will receive data</p>  
@@ -52,7 +52,7 @@ Registration
 
  <p>
 You will reveive email and home view</p> 
-                  <img src="/images/logedin.PNG" Search.PNGalt="image" width="600" height="500"> </br>
+                  <img src="/images/logedin.PNG" Search.PNGalt="image" width="600" height="300"> </br>
 
  <p>
 Login 

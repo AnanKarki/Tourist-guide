@@ -121,7 +121,7 @@
       position: fixed;
       width: 100%;
       height: 35px;
-      top: 45p x;
+      top: 45px;
     }
     #nav-wrapper {
       width: 90%;

@@ -7,6 +7,8 @@
             <li><a href="crud/create">Create</a></li>
             <li><a href="/crud">Update</a></li>
             <li><a href="/crud">View</a></li>
+           
+
         </ul>
     </nav>
 

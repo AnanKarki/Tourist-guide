@@ -48,8 +48,8 @@ Route::resource('crud', 'CRUDController');
 
 
 
-Route::get('/view' , function() {
-return view('view');
+Route::get('Userinfo' , function() {
+return view('Users');
 });
 Route::get('/index' , function() {
 return view('index');

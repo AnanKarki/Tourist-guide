@@ -16,10 +16,10 @@ class CreateCrudsTable extends Migration
     {
         Schema::create('cruds', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            $table->string('title')->max(6000);
             $table->string('post');
             $table->string('image')->default('0');
-            $table->string('when_to_visit');
+            $table->string('when_to_visit')->max(1000);
             $table->string('first_month');
             $table->string('second_month');
             $table->string('third_month');

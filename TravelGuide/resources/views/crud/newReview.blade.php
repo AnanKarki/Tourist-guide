@@ -232,7 +232,7 @@
     <input type="hidden" id="place" name="place" value="{{$post['place']}}">
     
      @endforeach
-     <input type="text" id="place" name="username" value="{{Auth::user()->email}}">
+     <input type="hidden" id="place" name="username" value="{{Auth::user()->email}}">
    <button type="submit" name="Post" id="post" value="Post">Post</button>
     
   

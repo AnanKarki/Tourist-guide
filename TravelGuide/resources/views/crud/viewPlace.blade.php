@@ -178,7 +178,7 @@
      <img src="/images/{{ $post->image}}" alt="image" width="750" height="400">
               
                  
-                 <div class="conte" style=" padding-left:200px ;  font: 30px; color : Black ;   text-overflow: ellipsis;">{{$post['title']}}
+                 <div class="conte" style=" padding-left:200px ;  font-size: : 30px; font-style: bold; text-overflow: ellipsis;">{{$post['title']}}
 
                  </div>
                </div>
@@ -200,67 +200,48 @@
 <button onclick="GetRoute()" name="Distance"><i class="fa fa-car"></i></button>
 <p id="demo"></p>
 </div>
+      <div class="cont" style="font: 15px">{{$post['post']}}</div>
+
+        
 
  
   
 </div>
 </div>
-<div class="container">
-
-    <tbody>
-      @foreach($cruds as $post)
-      
-         <p>{{$post['domestic_tourist_livingexpense_lowrate']}}</p>
-         <p>{{$post['domestic_tourist_livingexpense_highrate']}}</p>
-         
-             <p>{{$post['domestic_tourist_transportationexpense_lowrate']}}</p>
-             <p>{{$post['domestic_tourist_transportationexpense_highrate']}} </p>
-             
-    
-      
-      @endforeach
-    </tbody>
-  </table>
-
-</div>
-<div class="container">
- <table class="table table-striped">
-    <thead>
-      
-    </thead>
-    <tbody>
-      @foreach($cruds as $post)
-      
-        
-          <p>{{$post['international_tourist_livingexpense_lowrate']}}</p>
-            <p>{{$post['international_tourist_livingexpense_highrate']}}</p>
+<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+              <p style="font-size: 30px; font-style: bold;">Expenses</p>
+  @foreach($cruds as $post)
+  <p>international_tourist_livingexpense_lowrate = {{$post['international_tourist_livingexpense_lowrate']}}</p>
+            <p>international_tourist_livingexpense_highrate = {{$post['international_tourist_livingexpense_highrate']}}</p>
            
-              <p>{{$post['international_tourist_transportationexpense_lowrate']}}</p>
-               <p>{{$post['international_tourist_transportationexpense_highrate']}}</p>
+              <p>international_tourist_transportationexpense_lowrate= {{$post['international_tourist_transportationexpense_lowrate']}}</p>
+               <p>international_tourist_transportationexpense_highrate = {{$post['international_tourist_transportationexpense_highrate']}}</p>
+                 <p>domestic_tourist_livingexpense_lowrate = {{$post['domestic_tourist_livingexpense_lowrate']}}</p>
+         <p>domestic_tourist_livingexpense_highrate = {{$post['domestic_tourist_livingexpense_highrate']}}</p>
+         
+             <p>domestic_tourist_transportationexpense_lowrate = {{$post['domestic_tourist_transportationexpense_lowrate']}}</p>
+             <p>domestic_tourist_transportationexpense_highrate = {{$post['domestic_tourist_transportationexpense_highrate']}} </p>
     
-      
-      @endforeach
-    </tbody>
-  </table>
-<!-- fetch data from database-->
 
-      <div class="cont" style="font: 15px">{{$post['post']}}</div>
+  @endforeach
+  
+ </div> 
+</div>
+<div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+             <p style="font-size: 30px; font-style: bold;"> When To Visit</p>
+  @foreach($cruds as $post)
+     <p>{{$post['when_to_visit']}}</p>
 
-            
-                  <td>{{$post['post']}}</td>
-                   {{$post['first_month']}}
-             {{$post['second_month']}}
-            {{$post['third_month']}}
-             {{$post['fourth_month']}}
-             {{$post['fifth_month']}}
-            {{$post['sixth_month']}}
-            {{$post['seventh_month']}}
-            {{$post['eight_month']}}
-          {{$post['ninth_month']}}
-           {{$post['tenth_month']}}
-            {{$post['eleventh_month']}}
-             {{$post['twelveth_month']}}
-      
+  @endforeach
+  <div>
+    <input type="submit" name="ViewGraph" value="View Graph" onclick="init()">
+  </div>
+ </div> 
+</div>
      
          
          
@@ -286,9 +267,7 @@
     
      
   </div>
-  <div>
-    <input type="submit" name="ViewGraph" value="View Graph" onclick="init()">
-  </div>
+ 
 <script type="text/javascript"></script>
 <script>
   
@@ -359,7 +338,7 @@
 
             var margin = 8;
 
-            var header = "Percentage";
+            var header = "Percentage of visitor in a place ";
 
             can = document.getElementById("can");
 
@@ -441,6 +420,7 @@
 
             }
 
+
         }
 
  
@@ -448,9 +428,9 @@
         function calcY(value) {
 
             y = can.height - value * yScalar;
-
+         
         }
-       
+     
 </script>
 
 
